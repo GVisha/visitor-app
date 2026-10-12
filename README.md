@@ -40,9 +40,16 @@ Navigate into the backend service directory, restore node modules, and boot the 
 ```bash
 cd backend
 npm install
-npx ts-node server.ts
+npm run dev
 ```
 *Note: The backend service listens on port `5001` to prevent system conflicts with default macOS AirPlay bindings.*
+
+For a production-style run:
+
+```bash
+npm run build
+npm start
+```
 
 ### 2. Frontend Client Activation
 Open a separate terminal shell workspace, spin up the development engine, and access the interface:
